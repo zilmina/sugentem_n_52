@@ -109,7 +109,7 @@ all: SUGENTEM_N_52.mot
 # Tool invocations
 SUGENTEM_N_52.mot: $(LINKER_OUTPUT_OUTPUTS)
 	@echo 'Invoking: Converter'
-	rlink   "C:\git\Duo_monitos\sugentem_n_52\SUGENTEM_N_52\DefaultBuild\SUGENTEM_N_52.abs" -form=stype  -output="C:\git\Duo_monitos\sugentem_n_52\SUGENTEM_N_52\DefaultBuild\SUGENTEM_N_52.mot"
+	rlink   "C:\git\sugentem_n_52\sugentem_n_52\SUGENTEM_N_52\DefaultBuild\SUGENTEM_N_52.abs" -form=stype  -output="C:\git\sugentem_n_52\sugentem_n_52\SUGENTEM_N_52\DefaultBuild\SUGENTEM_N_52.mot"
 	@echo 'Finished building target:'
 	@echo.
 	$(MAKE) --no-print-directory post-build
@@ -117,7 +117,7 @@ SUGENTEM_N_52.mot: $(LINKER_OUTPUT_OUTPUTS)
 SUGENTEM_N_52.abs: $(OBJS) $(LIBRARY_GENERATOR_OUTPUTTYPE_OUTPUTS) $(ALL_ASMS) 
 	@echo 'Invoking: Linker'
 	@echo 'Building target:'
-	rlink  -subcommand="LinkerSubCommand.tmp"  -list="SUGENTEM_N_52.map" -show -nooptimize -debug -output="C:\git\Duo_monitos\sugentem_n_52\SUGENTEM_N_52\DefaultBuild\SUGENTEM_N_52.abs" -rom=D=R,D_1=R_1,D_2=R_2 -nocompress -nologo -nomessage
+	rlink  -subcommand="LinkerSubCommand.tmp"  -list="SUGENTEM_N_52.map" -show -nooptimize -debug -output="C:\git\sugentem_n_52\sugentem_n_52\SUGENTEM_N_52\DefaultBuild\SUGENTEM_N_52.abs" -rom=D=R,D_1=R_1,D_2=R_2 -nocompress -nologo -nomessage
 	@echo 'Finished building:'
 	@echo.
 

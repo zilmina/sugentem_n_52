@@ -1,0 +1,1218 @@
+Renesas Optimizing Linker (W2.06.00 )             27-Apr-2018 00:12:27
+
+*** Options ***
+
+-subcommand=LinkerSubCommand.tmp
+-input=".\dbsct.obj"
+-input=".\intprg.obj"
+-input=".\resetprg.obj"
+-input=".\sbrk.obj"
+-input=".\SUGENTEM_N_52.obj"
+-input=".\vecttbl.obj"
+-library=".\SUGENTEM_N_52.lib"
+-input=".\hardware_infomation_for_sugentem_n_52.obj"
+-input=".\motor_control.obj"
+-input=".\sci.obj"
+-input=".\timer_for_sugentem_n_52.obj"
+-input=".\ad_converter.obj"
+-input=".\mode.obj"
+-input=".\periodic_interrupt_function.obj"
+-input=".\spi.obj"
+-input=".\Algorithm.obj"
+-input=".\loging.obj"
+-input=".\.metadata\.plugins\org.eclipse.cdt.make.core\specs.obj"
+-start=B_1,R_1,B_2,R_2,B,R,SU,SI/04,PResetPRG/0FFFA0000,C_1,C_2,C,C$DSEC,C$BSEC,C$INIT,C$VTBL,C$VECT,D_1,D_2,D,P,PIntPRG,W_1,W_2,W,L/0FFFA0100,FIXEDVECT/0FFFFFFD0
+-list=SUGENTEM_N_52.map
+-show
+-nooptimize
+-debug
+-output=C:\git\sugentem_n_52\sugentem_n_52\SUGENTEM_N_52\DefaultBuild\SUGENTEM_N_52.abs
+-rom=D=R,D_1=R_1,D_2=R_2
+-nocompress
+-nologo
+-nomessage
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+
+B_1
+                                  00000004  00000007         4   1
+R_1
+                                  00000008  0000010d       106   1
+B_2
+                                  0000010e  00000b15       a08   2
+R_2
+                                  00000b16  0000a771      9c5c   2
+B
+                                  0000a774  0000ac1b       4a8   4
+R
+                                  0000ac1c  0000ad53       138   4
+SU
+                                  0000ad54  0000ae53       100   4
+SI
+                                  0000ae54  0000b153       300   4
+PResetPRG
+                                  fffa0000  fffa0038        39   1
+C_1
+                                  fffa0100  fffa0100         0   1
+C_2
+                                  fffa0100  fffa0100         0   1
+C
+                                  fffa0100  fffa0207       108   4
+C$DSEC
+                                  fffa0208  fffa022b        24   4
+C$BSEC
+                                  fffa022c  fffa0243        18   4
+C$INIT
+                                  fffa0244  fffa0244         0   1
+C$VTBL
+                                  fffa0244  fffa0244         0   1
+C$VECT
+                                  fffa0244  fffa0643       400   4
+D_1
+                                  fffa0644  fffa0749       106   1
+D_2
+                                  fffa074a  fffaa3a5      9c5c   2
+D
+                                  fffaa3a8  fffaa4df       138   4
+P
+                                  fffaa4e0  fffb27f5      8316   1
+PIntPRG
+                                  fffb27f6  fffb29ee       1f9   1
+W_1
+                                  fffb29ef  fffb2a12        24   1
+W_2
+                                  fffb2a14  fffb2a41        2e   2
+W
+                                  fffb2a44  fffb2a44         0   4
+L
+                                  fffb2a44  fffb2b02        bf   4
+$ADDR_C_FFFFFF80
+                                  ffffff80  ffffff83         4   1
+$ADDR_C_FFFFFFA0
+                                  ffffffa0  ffffffaf        10   1
+FIXEDVECT
+                                  ffffffd0  ffffffff        30   4
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+
+SECTION=B_1
+FILE=.\Algorithm.obj
+                                  00000004  00000006         3
+  _Maze
+                                  00000004         3   data ,l        4c
+FILE=.\loging.obj
+                                  00000007  00000007         1
+  _flag_logging
+                                  00000007         1   data ,l         3
+
+SECTION=R_1
+FILE=.\ad_converter.obj
+                                  00000008  00000009         2
+  _front_ring_buffer_window
+                                  00000008         1   data ,l         1
+  _side_ring_buffer_window
+                                  00000009         1   data ,l         1
+FILE=.\mode.obj
+                                  0000000a  0000000a         1
+  _Mode_number$1
+                                  0000000a         1   data ,l         3
+FILE=.\periodic_interrupt_function.obj
+                                  0000000b  0000000b         1
+  _sprit_num$1
+                                  0000000b         1   data ,l         1
+FILE=.\spi.obj
+                                  0000000c  0000000c         1
+  _Spi_Receive_Flag
+                                  0000000c         1   data ,l         2
+FILE=.\Algorithm.obj
+                                  0000000d  0000010d       101
+  _Maze_Map
+                                  0000000d       100   data ,l         9
+  _slalom_flag
+                                  0000010d         1   data ,l        25
+
+SECTION=B_2
+FILE=.\sci.obj
+                                  0000010e  00000915       808
+  _rx_fifo
+                                  0000010e       404   data ,l         3
+  _tx_fifo
+                                  00000512       404   data ,l         5
+FILE=.\Algorithm.obj
+                                  00000916  00000b15       200
+  _smap
+                                  00000916       200   data ,g        20
+
+SECTION=R_2
+FILE=.\sci.obj
+                                  00000b16  00000b17         2
+  _num$1
+                                  00000b16         2   data ,l         1
+FILE=.\ad_converter.obj
+                                  00000b18  00000b2f        18
+  _side_right_sensor_log
+                                  00000b18         6   data ,l         1
+  _front_right_sensor_log
+                                  00000b1e         6   data ,l         1
+  _front_left_sensor_log
+                                  00000b24         6   data ,l         1
+  _side_left_sensor_log
+                                  00000b2a         6   data ,l         1
+FILE=.\periodic_interrupt_function.obj
+                                  00000b30  00000b31         2
+  _flag_interrupt
+                                  00000b30         2   data ,l         3
+FILE=.\loging.obj
+                                  00000b32  0000a771      9c40
+  _log_data
+                                  00000b32      9c40   data ,g         2
+
+SECTION=B
+FILE=.\sbrk.obj
+                                  0000a774  0000ab73       400
+  _heap_area
+                                  0000a774       400   data ,l         2
+FILE=.\timer_for_sugentem_n_52.obj
+                                  0000ab74  0000ab7f         c
+  _runtime_raw
+                                  0000ab74         4   data ,l         6
+  _runtime_ms
+                                  0000ab78         4   data ,l         1
+  _runtime_s
+                                  0000ab7c         4   data ,l         1
+FILE=.\ad_converter.obj
+                                  0000ab80  0000abff        80
+  _mouse
+                                  0000ab80        30   data ,l         2
+  _led_front
+                                  0000abb0        28   data ,l         a
+  _led_side
+                                  0000abd8        28   data ,l         e
+FILE=.\spi.obj
+                                  0000ac00  0000ac13        14
+  _Spi_log_timer
+                                  0000ac00        14   data ,g         0
+FILE=_errno
+                                  0000ac14  0000ac17         4
+  __errno
+                                  0000ac14         4   data ,g         2
+FILE=dtor_list
+                                  0000ac18  0000ac1b         4
+  _needed_destruction_head
+                                  0000ac18         4   data ,l         3
+
+SECTION=R
+FILE=.\sbrk.obj
+                                  0000ac1c  0000ac1f         4
+  _brk
+                                  0000ac1c         4   data ,l         1
+FILE=.\motor_control.obj
+                                  0000ac20  0000ad33       114
+  _mouse
+                                  0000ac20        f0   data ,l        6c
+  _flag_r_motor_restart$1
+                                  0000ad10         4   data ,l         2
+  _flag_l_motor_restart$2
+                                  0000ad14         4   data ,l         2
+  _led_front_e_p$3
+                                  0000ad18         4   data ,l         1
+  _led_front_e_i$4
+                                  0000ad1c         4   data ,l         1
+  _led_front_e_d$5
+                                  0000ad20         4   data ,l         1
+  _past_led_front_e_p$6
+                                  0000ad24         4   data ,l         1
+  _past_dps_raw$7
+                                  0000ad28         4   data ,l         1
+  _encr_past_raw$8
+                                  0000ad2c         4   data ,l         1
+  _encl_past_raw$9
+                                  0000ad30         4   data ,l         1
+FILE=.\timer_for_sugentem_n_52.obj
+                                  0000ad34  0000ad37         4
+  _time_stamp
+                                  0000ad34         4   data ,l         2
+FILE=.\loging.obj
+                                  0000ad38  0000ad3f         8
+  _top_ring_buffer
+                                  0000ad38         4   data ,g         2
+  _bottom_ring_buffer
+                                  0000ad3c         4   data ,g         2
+FILE=static_init
+                                  0000ad40  0000ad47         8
+  _use_patch_info
+                                  0000ad40         4   data ,l         1
+  _dtors_done$1
+                                  0000ad44         4   data ,l         1
+FILE=munch_dtors
+                                  0000ad48  0000ad4b         4
+  __dtors
+                                  0000ad48         4   data ,g         1
+FILE=vars
+                                  0000ad4c  0000ad53         8
+  __new_handler
+                                  0000ad4c         4   data ,g         0
+  ___head
+                                  0000ad50         4   data ,g         1
+
+SECTION=SU
+FILE=.\resetprg.obj
+                                  0000ad54  0000ae53       100
+
+SECTION=SI
+FILE=.\resetprg.obj
+                                  0000ae54  0000b153       300
+
+SECTION=PResetPRG
+FILE=.\resetprg.obj
+                                  fffa0000  fffa0038        39
+  _PowerON_Reset_PC
+                                  fffa0000        39   entry,g         1
+
+SECTION=C
+FILE=.\dbsct.obj
+                                  fffa0100  fffa0133        34
+  __CTBL
+                                  fffa0100        34   data ,g         0
+FILE=_in_exps
+                                  fffa0134  fffa016b        38
+  _exp_lcoef$2
+                                  fffa0134        1c   data ,l         1
+  _exp_hcoef$1
+                                  fffa0150        1c   data ,l         1
+FILE=_in_logs
+                                  fffa016c  fffa018b        20
+  _log_coef$3
+                                  fffa016c        20   data ,l         1
+FILE=consts
+                                  fffa018c  fffa01e3        58
+  __IFZEROS
+                                  fffa018c         4   data ,g         4
+  __IFONES
+                                  fffa0190         4   data ,g         4
+  __HALFS
+                                  fffa0194         4   data ,g         1
+  __QUOTS
+                                  fffa0198         4   data ,g         0
+  __TWOS
+                                  fffa019c         4   data ,g         0
+  __FOURS
+                                  fffa01a0         4   data ,g         0
+  __PAIS
+                                  fffa01a4         4   data ,g         0
+  __2PAIS
+                                  fffa01a8         4   data ,g         0
+  __HLFPAIS
+                                  fffa01ac         4   data ,g         0
+  __QUOPAIS
+                                  fffa01b0         4   data ,g         0
+  __LOGE2S
+                                  fffa01b4         4   data ,g         2
+  __NIFZEROS
+                                  fffa01b8         4   data ,g         1
+  __NIFONES
+                                  fffa01bc         4   data ,g         1
+  __NHALFS
+                                  fffa01c0         4   data ,g         0
+  __NQUOTS
+                                  fffa01c4         4   data ,g         0
+  __NTWOS
+                                  fffa01c8         4   data ,g         0
+  __NFOURS
+                                  fffa01cc         4   data ,g         0
+  __NPAIS
+                                  fffa01d0         4   data ,g         0
+  __N2PAIS
+                                  fffa01d4         4   data ,g         0
+  __NHLFPAIS
+                                  fffa01d8         4   data ,g         0
+  __NQUOPAIS
+                                  fffa01dc         4   data ,g         0
+  __NLOGE2S
+                                  fffa01e0         4   data ,g         0
+FILE=_const
+                                  fffa01e4  fffa0207        24
+  __IFNAND
+                                  fffa01e4         0   none ,g         0
+  __IFINFD
+                                  fffa01ec         0   none ,g         0
+  __NIFINFD
+                                  fffa01f4         0   none ,g         0
+  __IFNANS
+                                  fffa01fc         0   none ,g         4
+  __IFINFS
+                                  fffa0200         0   none ,g         3
+  __NIFINFS
+                                  fffa0204         0   none ,g         2
+
+SECTION=C$DSEC
+FILE=.\dbsct.obj
+                                  fffa0208  fffa022b        24
+  __DTBL
+                                  fffa0208        24   data ,g         0
+
+SECTION=C$BSEC
+FILE=.\dbsct.obj
+                                  fffa022c  fffa0243        18
+  __BTBL
+                                  fffa022c        18   data ,g         0
+
+SECTION=C$VECT
+FILE=.\dbsct.obj
+                                  fffa0244  fffa0643       400
+
+SECTION=D_1
+FILE=.\ad_converter.obj
+                                  fffa0644  fffa0645         2
+FILE=.\mode.obj
+                                  fffa0646  fffa0646         1
+FILE=.\periodic_interrupt_function.obj
+                                  fffa0647  fffa0647         1
+FILE=.\spi.obj
+                                  fffa0648  fffa0648         1
+FILE=.\Algorithm.obj
+                                  fffa0649  fffa0749       101
+
+SECTION=D_2
+FILE=.\sci.obj
+                                  fffa074a  fffa074b         2
+FILE=.\ad_converter.obj
+                                  fffa074c  fffa0763        18
+FILE=.\periodic_interrupt_function.obj
+                                  fffa0764  fffa0765         2
+FILE=.\loging.obj
+                                  fffa0766  fffaa3a5      9c40
+
+SECTION=D
+FILE=.\sbrk.obj
+                                  fffaa3a8  fffaa3ab         4
+FILE=.\motor_control.obj
+                                  fffaa3ac  fffaa4bf       114
+FILE=.\timer_for_sugentem_n_52.obj
+                                  fffaa4c0  fffaa4c3         4
+FILE=.\loging.obj
+                                  fffaa4c4  fffaa4cb         8
+FILE=static_init
+                                  fffaa4cc  fffaa4d3         8
+FILE=munch_dtors
+                                  fffaa4d4  fffaa4d7         4
+FILE=vars
+                                  fffaa4d8  fffaa4df         8
+
+SECTION=P
+FILE=.\sbrk.obj
+                                  fffaa4e0  fffaa500        21
+  _sbrk
+                                  fffaa4e0        21   func ,g         0
+FILE=.\SUGENTEM_N_52.obj
+                                  fffaa501  fffaa633       133
+  _main
+                                  fffaa501       132   func ,g         1
+  _abort
+                                  fffaa633         1   func ,g         1
+FILE=.\hardware_infomation_for_sugentem_n_52.obj
+                                  fffaa634  fffaa6bd        8a
+  _test
+                                  fffaa634         3   func ,g         0
+  _io_initialize
+                                  fffaa637        2e   func ,g         1
+  _main_clock_initialize
+                                  fffaa665        2b   func ,g         1
+  _LED_numeric_lighting
+                                  fffaa690        2e   func ,g        be
+FILE=.\motor_control.obj
+                                  fffaa6be  fffab6f8      103b
+  _motor_initialize
+                                  fffaa6be       103   func ,g         1
+  _motor_driver_enable
+                                  fffaa7c1         8   func ,g         7
+  _motor_driver_disable
+                                  fffaa7c9         8   func ,g         b
+  _motor_power_change
+                                  fffaa7d1       170   func ,g         1
+  _calculate_duty_with_pid
+                                  fffaa941       291   func ,g         1
+  _update_velocity_parameters
+                                  fffaabd2        4f   func ,g         1
+  _update_angular_velocity_parameters
+                                  fffaac21        64   func ,g         1
+  _duty_override
+                                  fffaac85         b   func ,g         e
+  _change_duty
+                                  fffaac90        38   func ,g         1
+  _update_gyro
+                                  fffaacc8        51   func ,g         1
+  _update_encoder
+                                  fffaad19       196   func ,g         1
+  _update_motor_parameters
+                                  fffaaeaf        ee   func ,g         0
+  _SPI_Gyro_Zaxis_Offset_get
+                                  fffaaf9d        48   func ,g        14
+  _check_body_velocity_parameters
+                                  fffaafe5        48   func ,g         0
+  _check_body_angular_velocity_parameters
+                                  fffab02d        5e   func ,g         1
+  _check_r_motor_parameters
+                                  fffab08b        5e   func ,g         0
+  _check_r_encoder_parameters
+                                  fffab0e9        27   func ,g         0
+  _check_l_motor_parameters
+                                  fffab110        60   func ,g         0
+  _check_l_encoder_parameters
+                                  fffab170        27   func ,g         0
+  _change_body_velocity_parameters
+                                  fffab197        8e   func ,g        6e
+  _change_body_angular_velocity_parameters
+                                  fffab225        ec   func ,g        3d
+  _change_r_motor_parameters
+                                  fffab311        4f   func ,g         0
+  _change_l_motor_parameters
+                                  fffab360        52   func ,g         0
+  _initialize_distance
+                                  fffab3b2        1a   func ,g        6b
+  _initialize_all_pid
+                                  fffab3cc        10   func ,g         4
+  _initialize_led_pid
+                                  fffab3dc         a   func ,g        50
+  _initialize_angle_pid
+                                  fffab3e6         a   func ,g        1d
+  _initialize_velocity_pid
+                                  fffab3f0         a   func ,g         9
+  _request_move_mm
+                                  fffab3fa       130   func ,g        61
+  _request_slalom
+                                  fffab52a        a2   func ,g        31
+  _CONTROL_Distance_Watch
+                                  fffab5cc        33   func ,g         0
+  _CONTROL_Degree_Watch
+                                  fffab5ff        20   func ,g         0
+  _SET_side_WALL_CONTROL
+                                  fffab61f        1c   func ,g         0
+  _SET_front_WALL_CONTROL
+                                  fffab63b        1c   func ,g        42
+  _check_angular_velocity_PID
+                                  fffab657        27   func ,g         1
+  _check_velocity_PID
+                                  fffab67e        27   func ,g         0
+  _check_side_led_PID
+                                  fffab6a5        27   func ,g         0
+  _enable_suction
+                                  fffab6cc         8   func ,g         6
+  _disable_suction
+                                  fffab6d4         8   func ,g         6
+  _enable_pid_calculate
+                                  fffab6dc         a   func ,g        11
+  _disable_pid_calculate
+                                  fffab6e6         a   func ,g         0
+  _change_P_gain_mode
+                                  fffab6f0         9   func ,g         0
+FILE=.\sci.obj
+                                  fffab6f9  fffabd4e       656
+  _SCI1_initialize
+                                  fffab6f9        b3   func ,g         1
+  _INT_SCI1_RXI1
+                                  fffab7ac        30   func ,g         1
+  _INT_SCI1_TXI1
+                                  fffab7dc        39   func ,g         1
+  _INT_SCI1_TEI1
+                                  fffab815         e   func ,g         1
+  _SCI_Str_print
+                                  fffab823        1b   func ,g         c
+  _SCI_Str_println
+                                  fffab83e         d   func ,g        17
+  _SCI_Value_print
+                                  fffab84b       1fc   func ,g        15
+  _SCI_Value_println
+                                  fffaba47         c   func ,g         3
+  _SCI_Value0x_print
+                                  fffaba53       216   func ,g         0
+  _SCI_data_putc
+                                  fffabc69        57   func ,l         3
+  _SCI_Str_readline
+                                  fffabcc0        8f   func ,g         0
+FILE=.\timer_for_sugentem_n_52.obj
+                                  fffabd4f  fffabecf       181
+  _CMT0_initialize
+                                  fffabd4f        6f   func ,g         0
+  _TPU1_initialize
+                                  fffabdbe        6c   func ,g         1
+  _timer_countup
+                                  fffabe2a        36   func ,g         1
+  _delay
+                                  fffabe60        1a   func ,g        6e
+  _TIMER_Wait_Key_Off
+                                  fffabe7a        2e   func ,g         3
+  _SET_time_stamp
+                                  fffabea8        11   func ,g         1
+  _flag_time_out
+                                  fffabeb9        17   func ,g         1
+FILE=.\ad_converter.obj
+                                  fffabed0  fffac4e7       618
+  _ad_converter_initialize
+                                  fffabed0        c4   func ,g         1
+  _update_battery_voltage
+                                  fffabf94        2b   func ,g         2
+  _update_front_sensor_voltage
+                                  fffabfbf       100   func ,g         1
+  _update_side_sensor_voltage
+                                  fffac0bf       113   func ,g         1
+  _battery_voltage
+                                  fffac1d2         9   func ,g         4
+  _AD_Sensor_Value_Get
+                                  fffac1db        37   func ,g         1
+  _AD_Sensor_Distance_Get
+                                  fffac212        87   func ,g        4b
+  _AD_Line_Error_Get
+                                  fffac299        b0   func ,g         1
+  _AD_front_Error_Get
+                                  fffac349        34   func ,g         1
+  _AD_Line_Difference_Print
+                                  fffac37d        66   func ,g         1
+  _AD_Line_Distance_Print
+                                  fffac3e3        70   func ,g         1
+  _AD_Wall_Look
+                                  fffac453        3c   func ,g        2e
+  _AD_Wall_ref_Look
+                                  fffac48f        46   func ,g         0
+  _TIMER_Wait_For_Loop
+                                  fffac4d5        13   func ,g         0
+FILE=.\mode.obj
+                                  fffac4e8  fffad8b8      13d1
+  _MODE_Mode_Change
+                                  fffac4e8      1319   func ,g         3
+  _set_position
+                                  fffad801        b8   func ,g         8
+FILE=.\periodic_interrupt_function.obj
+                                  fffad8b9  fffada14       15c
+  _CMT1_initialize
+                                  fffad8b9        66   func ,g         0
+  _TPU0_initialize
+                                  fffad91f        6c   func ,g         1
+  _interrupt_function
+                                  fffad98b        76   func ,g         1
+  _enable_interrupt
+                                  fffada01         a   func ,g         1
+  _disable_interrupt
+                                  fffada0b         a   func ,g         1
+FILE=.\spi.obj
+                                  fffada15  fffade77       463
+  _SPI_init
+                                  fffada15        d1   func ,g         1
+  _SPI_Mpu6500_initialize
+                                  fffadae6        82   func ,g         1
+  _SPI_Gyro_Zaxis_get
+                                  fffadb68        28   func ,g         2
+  _SPI_Accel_Yout_get
+                                  fffadb90         a   func ,g         0
+  _SPI_Accel_Zout_get
+                                  fffadb9a         a   func ,g         0
+  _SPI_Encoder_R_Angle_get
+                                  fffadba4        10   func ,g         1
+  _SPI_Encoder_L_Angle_get
+                                  fffadbb4        10   func ,g         1
+  _SPI_GyroZ_and_Encoder_R_get
+                                  fffadbc4        1d   func ,g         0
+  _SPI_AccelY_and_Encoder_L_get
+                                  fffadbe1        1d   func ,g         0
+  _INT_RSPI0_SPRI0
+                                  fffadbfe         a   func ,g         1
+  _SPI_communicate
+                                  fffadc08        38   func ,l         a
+  _SPI_communicate8bit
+                                  fffadc40        5b   func ,l         a
+  _SPI_communicate_full
+                                  fffadc9b        ce   func ,l         2
+  _SPI_communicate16bit
+                                  fffadd69        9c   func ,l         2
+  _valid_ssl
+                                  fffade05        24   func ,l         5
+  _invalid_ssl
+                                  fffade29        24   func ,l         1
+  _valid_spi
+                                  fffade4d         c   func ,l         3
+  _invalid_spi
+                                  fffade59         c   func ,l         3
+  _TIMER_Wait_for
+                                  fffade65        13   func ,g         f
+FILE=.\Algorithm.obj
+                                  fffade78  fffb2189      4312
+  _SEARCH_Para_Set
+                                  fffade78         d   func ,g         7
+  _mouse_search_150mm_Adachi_Normal
+                                  fffade85       b0c   func ,g         4
+  _mouse_search_250mm_Adachi_Normal
+                                  fffae991       a38   func ,g         0
+  _mouse_search_300mm_Adachi_Normal
+                                  fffaf3c9       a12   func ,g         1
+  _mouse_try_STRAIGHT_1ST_TURN_150mm_Adachi
+                                  fffafddb       88b   func ,g         1
+  _mouse_try_STRAIGHT_2ND_TURN_300mm_Adachi
+                                  fffb0666       85d   func ,g         1
+  _mouse_try_STRAIGHT_3RD_TURN_300mm_Adachi
+                                  fffb0ec3       7dc   func ,g         1
+  _mouse_try_STRAIGHT_4TH_TURN_300mm_Adachi
+                                  fffb169f       7e9   func ,g         0
+  _ENABLE_SLALOM_FLAG
+                                  fffb1e88         a   func ,g         7
+  _DISABLE_SLALOM_FLAG
+                                  fffb1e92         a   func ,g         0
+  _MAZE_Map_Clear
+                                  fffb1e9c        c5   func ,g         0
+  _make_smap
+                                  fffb1f61       229   func ,g         0
+FILE=.\loging.obj
+                                  fffb218a  fffb2236        ad
+  _logging
+                                  fffb218a        33   func ,g         2
+  _print_log_data
+                                  fffb21bd        66   func ,g         1
+  _enable_flag_logging
+                                  fffb2223         a   func ,g         8
+  _disable_flag_logging
+                                  fffb222d         a   func ,g         8
+FILE=powf
+                                  fffb2237  fffb2269        33
+  _powl
+                                  fffb2237         1   func ,g         0
+  _pow
+                                  fffb2238         2   func ,g         7
+  _powf
+                                  fffb223a        30   func ,g         2
+FILE=cppinit
+                                  fffb226a  fffb2288        1f
+  __CALL_INIT
+                                  fffb226a        1b   func ,g         1
+  __CALL_END
+                                  fffb2285         4   func ,g         1
+FILE=__initsct
+                                  fffb2289  fffb22d2        4a
+  __INITSCT
+                                  fffb2289         0   none ,g         1
+  loop1
+                                  fffb229b         0   none ,l         1
+  next_loop1
+                                  fffb22a9         0   none ,l         2
+  loop3
+                                  fffb22bb         0   none ,l         1
+  next_loop3
+                                  fffb22cc         0   none ,l         2
+FILE=_in_pows
+                                  fffb22d3  fffb2493       1c1
+  __in_pows
+                                  fffb22d3       1c1   func ,g         1
+FILE=static_init
+                                  fffb2494  fffb2500        6d
+  __call_dtors()
+                                  fffb2494        6d   func ,g         1
+FILE=_i_ldes
+                                  fffb2501  fffb257a        7a
+  __in_ldexps
+                                  fffb2501        7a   func ,g         2
+FILE=_in_exps
+                                  fffb257b  fffb26a9       12f
+  __in_exps
+                                  fffb257b       12f   func ,g         2
+FILE=_in_logs
+                                  fffb26aa  fffb2799        f0
+  __in_logs
+                                  fffb26aa        f0   func ,g         2
+FILE=dtor_list
+                                  fffb279a  fffb27f1        58
+  __process_needed_destructions()
+                                  fffb279a        29   func ,g         2
+  ___already_marked_for_destruction
+                                  fffb27c3         6   func ,g         0
+  ___record_needed_destruction
+                                  fffb27c9        27   func ,g         0
+  ___std__needed_destruction_list
+                                  fffb27f0         2   func ,g         0
+FILE=error
+                                  fffb27f2  fffb27f5         4
+  ___abort_execution
+                                  fffb27f2         4   func ,g         2
+
+SECTION=PIntPRG
+FILE=.\intprg.obj
+                                  fffb27f6  fffb29ee       1f9
+  _Excep_SuperVisorInst
+                                  fffb27f6         2   func ,g         1
+  _Excep_AccessInst
+                                  fffb27f8         2   func ,g         1
+  _Excep_UndefinedInst
+                                  fffb27fa         2   func ,g         1
+  _Excep_FloatingPoint
+                                  fffb27fc         2   func ,g         1
+  _NonMaskableInterrupt
+                                  fffb27fe         2   func ,g         1
+  _Dummy
+                                  fffb2800         2   func ,g         6
+  _Excep_BRK
+                                  fffb2802         4   func ,g         0
+  _Excep_BSC_BUSERR
+                                  fffb2806         2   func ,g         0
+  _Excep_FCU_FIFERR
+                                  fffb2808         2   func ,g         0
+  _Excep_FCU_FRDYI
+                                  fffb280a         2   func ,g         0
+  _Excep_ICU_SWINT
+                                  fffb280c         2   func ,g         0
+  _Excep_CMT0_CMI0
+                                  fffb280e         2   func ,g         0
+  _Excep_CMT1_CMI1
+                                  fffb2810         2   func ,g         0
+  _Excep_CMT2_CMI2
+                                  fffb2812         2   func ,g         0
+  _Excep_CMT3_CMI3
+                                  fffb2814         2   func ,g         0
+  _Excep_ETHER_EINT
+                                  fffb2816         2   func ,g         0
+  _Excep_USB0_D0FIFO0
+                                  fffb2818         2   func ,g         0
+  _Excep_USB0_D1FIFO0
+                                  fffb281a         2   func ,g         0
+  _Excep_USB0_USBI0
+                                  fffb281c         2   func ,g         0
+  _Excep_USB1_D0FIFO1
+                                  fffb281e         2   func ,g         0
+  _Excep_USB1_D1FIFO1
+                                  fffb2820         2   func ,g         0
+  _Excep_USB1_USBI1
+                                  fffb2822         2   func ,g         0
+  _Excep_RSPI0_SPRI0
+                                  fffb2824        10   func ,g         0
+  _Excep_RSPI0_SPTI0
+                                  fffb2834         2   func ,g         0
+  _Excep_RSPI0_SPII0
+                                  fffb2836         2   func ,g         0
+  _Excep_RSPI1_SPRI1
+                                  fffb2838         2   func ,g         0
+  _Excep_RSPI1_SPTI1
+                                  fffb283a         2   func ,g         0
+  _Excep_RSPI1_SPII1
+                                  fffb283c         2   func ,g         0
+  _Excep_RSPI2_SPRI2
+                                  fffb283e         2   func ,g         0
+  _Excep_RSPI2_SPTI2
+                                  fffb2840         2   func ,g         0
+  _Excep_RSPI2_SPII2
+                                  fffb2842         2   func ,g         0
+  _Excep_CAN0_RXF0
+                                  fffb2844         2   func ,g         0
+  _Excep_CAN0_TXF0
+                                  fffb2846         2   func ,g         0
+  _Excep_CAN0_RXM0
+                                  fffb2848         2   func ,g         0
+  _Excep_CAN0_TXM0
+                                  fffb284a         2   func ,g         0
+  _Excep_CAN1_RXF1
+                                  fffb284c         2   func ,g         0
+  _Excep_CAN1_TXF1
+                                  fffb284e         2   func ,g         0
+  _Excep_CAN1_RXM1
+                                  fffb2850         2   func ,g         0
+  _Excep_CAN1_TXM1
+                                  fffb2852         2   func ,g         0
+  _Excep_CAN2_RXF2
+                                  fffb2854         2   func ,g         0
+  _Excep_CAN2_TXF2
+                                  fffb2856         2   func ,g         0
+  _Excep_CAN2_RXM2
+                                  fffb2858         2   func ,g         0
+  _Excep_CAN2_TXM2
+                                  fffb285a         2   func ,g         0
+  _Excep_RTC_CUP
+                                  fffb285c         2   func ,g         0
+  _Excep_ICU_IRQ0
+                                  fffb285e         2   func ,g         0
+  _Excep_ICU_IRQ1
+                                  fffb2860         2   func ,g         0
+  _Excep_ICU_IRQ2
+                                  fffb2862         2   func ,g         0
+  _Excep_ICU_IRQ3
+                                  fffb2864         2   func ,g         0
+  _Excep_ICU_IRQ4
+                                  fffb2866         2   func ,g         0
+  _Excep_ICU_IRQ5
+                                  fffb2868         2   func ,g         0
+  _Excep_ICU_IRQ6
+                                  fffb286a         2   func ,g         0
+  _Excep_ICU_IRQ7
+                                  fffb286c         2   func ,g         0
+  _Excep_ICU_IRQ8
+                                  fffb286e         2   func ,g         0
+  _Excep_ICU_IRQ9
+                                  fffb2870         2   func ,g         0
+  _Excep_ICU_IRQ10
+                                  fffb2872         2   func ,g         0
+  _Excep_ICU_IRQ11
+                                  fffb2874         2   func ,g         0
+  _Excep_ICU_IRQ12
+                                  fffb2876         2   func ,g         0
+  _Excep_ICU_IRQ13
+                                  fffb2878         2   func ,g         0
+  _Excep_ICU_IRQ14
+                                  fffb287a         2   func ,g         0
+  _Excep_ICU_IRQ15
+                                  fffb287c         2   func ,g         0
+  _Excep_USB_USBR0
+                                  fffb287e         2   func ,g         0
+  _Excep_USB_USBR1
+                                  fffb2880         2   func ,g         0
+  _Excep_RTC_ALM
+                                  fffb2882         2   func ,g         0
+  _Excep_RTC_PRD
+                                  fffb2884         2   func ,g         0
+  _Excep_AD_ADI0
+                                  fffb2886         2   func ,g         0
+  _Excep_S12AD_S12ADI0
+                                  fffb2888         2   func ,g         0
+  _Excep_ICU_GROUP0
+                                  fffb288a         2   func ,g         0
+  _Excep_ICU_GROUP1
+                                  fffb288c         2   func ,g         0
+  _Excep_ICU_GROUP2
+                                  fffb288e         2   func ,g         0
+  _Excep_ICU_GROUP3
+                                  fffb2890         2   func ,g         0
+  _Excep_ICU_GROUP4
+                                  fffb2892         2   func ,g         0
+  _Excep_ICU_GROUP5
+                                  fffb2894         2   func ,g         0
+  _Excep_ICU_GROUP6
+                                  fffb2896         2   func ,g         0
+  _Excep_ICU_GROUP12
+                                  fffb2898         2   func ,g         0
+  _Excep_SCI12_SCIX0
+                                  fffb289a         2   func ,g         0
+  _Excep_SCI12_SCIX1
+                                  fffb289c         2   func ,g         0
+  _Excep_SCI12_SCIX2
+                                  fffb289e         2   func ,g         0
+  _Excep_SCI12_SCIX3
+                                  fffb28a0         2   func ,g         0
+  _Excep_TPU0_TGI0A
+                                  fffb28a2        1d   func ,g         0
+  _Excep_TPU0_TGI0B
+                                  fffb28bf         2   func ,g         0
+  _Excep_TPU0_TGI0C
+                                  fffb28c1         2   func ,g         0
+  _Excep_TPU0_TGI0D
+                                  fffb28c3         2   func ,g         0
+  _Excep_TPU1_TGI1A
+                                  fffb28c5        10   func ,g         0
+  _Excep_TPU1_TGI1B
+                                  fffb28d5         2   func ,g         0
+  _Excep_TPU2_TGI2A
+                                  fffb28d7         2   func ,g         0
+  _Excep_TPU2_TGI2B
+                                  fffb28d9         2   func ,g         0
+  _Excep_TPU3_TGI3A
+                                  fffb28db         2   func ,g         0
+  _Excep_TPU3_TGI3B
+                                  fffb28dd         2   func ,g         0
+  _Excep_TPU3_TGI3C
+                                  fffb28df         2   func ,g         0
+  _Excep_TPU3_TGI3D
+                                  fffb28e1         2   func ,g         0
+  _Excep_TPU4_TGI4A
+                                  fffb28e3         2   func ,g         0
+  _Excep_TPU4_TGI4B
+                                  fffb28e5         2   func ,g         0
+  _Excep_TPU5_TGI5A
+                                  fffb28e7         2   func ,g         0
+  _Excep_TPU5_TGI5B
+                                  fffb28e9         2   func ,g         0
+  _Excep_TPU6_TGI6A
+                                  fffb28eb         2   func ,g         0
+  _Excep_TPU6_TGI6B
+                                  fffb28ed         2   func ,g         0
+  _Excep_TPU6_TGI6C
+                                  fffb28ef         2   func ,g         0
+  _Excep_TPU6_TGI6D
+                                  fffb28f1         2   func ,g         0
+  _Excep_MTU0_TGIA0
+                                  fffb28f3         1   func ,g         0
+  _Excep_MTU0_TGIB0
+                                  fffb28f4         1   func ,g         0
+  _Excep_MTU0_TGIC0
+                                  fffb28f5         1   func ,g         0
+  _Excep_MTU0_TGID0
+                                  fffb28f6         1   func ,g         0
+  _Excep_MTU0_TGIE0
+                                  fffb28f7         2   func ,g         0
+  _Excep_MTU0_TGIF0
+                                  fffb28f9         2   func ,g         0
+  _Excep_TPU7_TGI7A
+                                  fffb28fb         2   func ,g         0
+  _Excep_TPU7_TGI7B
+                                  fffb28fd         2   func ,g         0
+  _Excep_MTU1_TGIA1
+                                  fffb28ff         1   func ,g         0
+  _Excep_MTU1_TGIB1
+                                  fffb2900         1   func ,g         0
+  _Excep_TPU8_TGI8A
+                                  fffb2901         2   func ,g         0
+  _Excep_TPU8_TGI8B
+                                  fffb2903         2   func ,g         0
+  _Excep_MTU2_TGIA2
+                                  fffb2905         1   func ,g         0
+  _Excep_MTU2_TGIB2
+                                  fffb2906         1   func ,g         0
+  _Excep_TPU9_TGI9A
+                                  fffb2907         2   func ,g         0
+  _Excep_TPU9_TGI9B
+                                  fffb2909         2   func ,g         0
+  _Excep_TPU9_TGI9C
+                                  fffb290b         2   func ,g         0
+  _Excep_TPU9_TGI9D
+                                  fffb290d         2   func ,g         0
+  _Excep_MTU3_TGIA3
+                                  fffb290f         1   func ,g         0
+  _Excep_MTU3_TGIB3
+                                  fffb2910         1   func ,g         0
+  _Excep_MTU3_TGIC3
+                                  fffb2911         1   func ,g         0
+  _Excep_MTU3_TGID3
+                                  fffb2912         1   func ,g         0
+  _Excep_TPU10_TGI10A
+                                  fffb2913         2   func ,g         0
+  _Excep_TPU10_TGI10B
+                                  fffb2915         2   func ,g         0
+  _Excep_MTU4_TGIA4
+                                  fffb2917         1   func ,g         0
+  _Excep_MTU4_TGIB4
+                                  fffb2918         1   func ,g         0
+  _Excep_MTU4_TGIC4
+                                  fffb2919         2   func ,g         0
+  _Excep_MTU4_TGID4
+                                  fffb291b         2   func ,g         0
+  _Excep_MTU4_TCIV4
+                                  fffb291d         2   func ,g         0
+  _Excep_TPU11_TGI11A
+                                  fffb291f         2   func ,g         0
+  _Excep_TPU11_TGI11B
+                                  fffb2921         2   func ,g         0
+  _Excep_MTU5_TGIU5
+                                  fffb2923         2   func ,g         0
+  _Excep_MTU5_TGIV5
+                                  fffb2925         2   func ,g         0
+  _Excep_MTU5_TGIW5
+                                  fffb2927         2   func ,g         0
+  _Excep_POE_OEI1
+                                  fffb2929         2   func ,g         0
+  _Excep_POE_OEI2
+                                  fffb292b         2   func ,g         0
+  _Excep_TMR0_CMIA0
+                                  fffb292d         2   func ,g         0
+  _Excep_TMR0_CMIB0
+                                  fffb292f         2   func ,g         0
+  _Excep_TMR0_OVI0
+                                  fffb2931         2   func ,g         0
+  _Excep_TMR1_CMIA1
+                                  fffb2933         2   func ,g         0
+  _Excep_TMR1_CMIB1
+                                  fffb2935         2   func ,g         0
+  _Excep_TMR1_OVI1
+                                  fffb2937         2   func ,g         0
+  _Excep_TMR2_CMIA2
+                                  fffb2939         2   func ,g         0
+  _Excep_TMR2_CMIB2
+                                  fffb293b         2   func ,g         0
+  _Excep_TMR2_OVI2
+                                  fffb293d         2   func ,g         0
+  _Excep_TMR3_CMIA3
+                                  fffb293f         2   func ,g         0
+  _Excep_TMR3_CMIB3
+                                  fffb2941         2   func ,g         0
+  _Excep_TMR3_OVI3
+                                  fffb2943         2   func ,g         0
+  _Excep_RIIC0_EEI0
+                                  fffb2945         2   func ,g         0
+  _Excep_RIIC0_RXI0
+                                  fffb2947         2   func ,g         0
+  _Excep_RIIC0_TXI0
+                                  fffb2949         2   func ,g         0
+  _Excep_RIIC0_TEI0
+                                  fffb294b         2   func ,g         0
+  _Excep_RIIC1_EEI1
+                                  fffb294d         2   func ,g         0
+  _Excep_RIIC1_RXI1
+                                  fffb294f         2   func ,g         0
+  _Excep_RIIC1_TXI1
+                                  fffb2951         2   func ,g         0
+  _Excep_RIIC1_TEI1
+                                  fffb2953         2   func ,g         0
+  _Excep_RIIC2_EEI2
+                                  fffb2955         2   func ,g         0
+  _Excep_RIIC2_RXI2
+                                  fffb2957         2   func ,g         0
+  _Excep_RIIC2_TXI2
+                                  fffb2959         2   func ,g         0
+  _Excep_RIIC2_TEI2
+                                  fffb295b         2   func ,g         0
+  _Excep_RIIC3_EEI3
+                                  fffb295d         2   func ,g         0
+  _Excep_RIIC3_RXI3
+                                  fffb295f         2   func ,g         0
+  _Excep_RIIC3_TXI3
+                                  fffb2961         2   func ,g         0
+  _Excep_RIIC3_TEI3
+                                  fffb2963         2   func ,g         0
+  _Excep_DMAC_DMAC0I
+                                  fffb2965         2   func ,g         0
+  _Excep_DMAC_DMAC1I
+                                  fffb2967         2   func ,g         0
+  _Excep_DMAC_DMAC2I
+                                  fffb2969         2   func ,g         0
+  _Excep_DMAC_DMAC3I
+                                  fffb296b         2   func ,g         0
+  _Excep_EXDMAC_EXDMAC0I
+                                  fffb296d         2   func ,g         0
+  _Excep_EXDMAC_EXDMAC1I
+                                  fffb296f         2   func ,g         0
+  _Excep_DEU_DEU0
+                                  fffb2971         2   func ,g         0
+  _Excep_DEU_DEU1
+                                  fffb2973         2   func ,g         0
+  _Excep_PDC_PCDFI
+                                  fffb2975         2   func ,g         0
+  _Excep_PDC_PCFEI
+                                  fffb2977         2   func ,g         0
+  _Excep_PDC_PCERI
+                                  fffb2979         2   func ,g         0
+  _Excep_SCI0_RXI0
+                                  fffb297b         2   func ,g         0
+  _Excep_SCI0_TXI0
+                                  fffb297d         2   func ,g         0
+  _Excep_SCI0_TEI0
+                                  fffb297f         2   func ,g         0
+  _Excep_SCI1_RXI1
+                                  fffb2981         e   func ,g         0
+  _Excep_SCI1_TXI1
+                                  fffb298f         e   func ,g         0
+  _Excep_SCI1_TEI1
+                                  fffb299d         e   func ,g         0
+  _Excep_SCI2_RXI2
+                                  fffb29ab         2   func ,g         0
+  _Excep_SCI2_TXI2
+                                  fffb29ad         2   func ,g         0
+  _Excep_SCI2_TEI2
+                                  fffb29af         2   func ,g         0
+  _Excep_SCI3_RXI3
+                                  fffb29b1         2   func ,g         0
+  _Excep_SCI3_TXI3
+                                  fffb29b3         2   func ,g         0
+  _Excep_SCI3_TEI3
+                                  fffb29b5         2   func ,g         0
+  _Excep_SCI4_RXI4
+                                  fffb29b7         2   func ,g         0
+  _Excep_SCI4_TXI4
+                                  fffb29b9         2   func ,g         0
+  _Excep_SCI4_TEI4
+                                  fffb29bb         2   func ,g         0
+  _Excep_SCI5_RXI5
+                                  fffb29bd         2   func ,g         0
+  _Excep_SCI5_TXI5
+                                  fffb29bf         2   func ,g         0
+  _Excep_SCI5_TEI5
+                                  fffb29c1         2   func ,g         0
+  _Excep_SCI6_RXI6
+                                  fffb29c3         2   func ,g         0
+  _Excep_SCI6_TXI6
+                                  fffb29c5         2   func ,g         0
+  _Excep_SCI6_TEI6
+                                  fffb29c7         2   func ,g         0
+  _Excep_SCI7_RXI7
+                                  fffb29c9         2   func ,g         0
+  _Excep_SCI7_TXI7
+                                  fffb29cb         2   func ,g         0
+  _Excep_SCI7_TEI7
+                                  fffb29cd         2   func ,g         0
+  _Excep_SCI8_RXI8
+                                  fffb29cf         2   func ,g         0
+  _Excep_SCI8_TXI8
+                                  fffb29d1         2   func ,g         0
+  _Excep_SCI8_TEI8
+                                  fffb29d3         2   func ,g         0
+  _Excep_SCI9_RXI9
+                                  fffb29d5         2   func ,g         0
+  _Excep_SCI9_TXI9
+                                  fffb29d7         2   func ,g         0
+  _Excep_SCI9_TEI9
+                                  fffb29d9         2   func ,g         0
+  _Excep_SCI10_RXI10
+                                  fffb29db         2   func ,g         0
+  _Excep_SCI10_TXI10
+                                  fffb29dd         2   func ,g         0
+  _Excep_SCI10_TEI10
+                                  fffb29df         2   func ,g         0
+  _Excep_SCI11_RXI11
+                                  fffb29e1         2   func ,g         0
+  _Excep_SCI11_TXI11
+                                  fffb29e3         2   func ,g         0
+  _Excep_SCI11_TEI11
+                                  fffb29e5         2   func ,g         0
+  _Excep_SCI12_RXI12
+                                  fffb29e7         2   func ,g         0
+  _Excep_SCI12_TXI12
+                                  fffb29e9         2   func ,g         0
+  _Excep_SCI12_TEI12
+                                  fffb29eb         2   func ,g         0
+  _Excep_IEB_IEBINT
+                                  fffb29ed         2   func ,g         0
+
+SECTION=W_1
+FILE=.\motor_control.obj
+                                  fffb29ef  fffb2a12        24
+
+SECTION=W_2
+FILE=.\motor_control.obj
+                                  fffb2a14  fffb2a21         e
+FILE=.\mode.obj
+                                  fffb2a22  fffb2a41        20
+
+SECTION=L
+FILE=.\SUGENTEM_N_52.obj
+                                  fffb2a44  fffb2a5f        1c
+FILE=.\sci.obj
+                                  fffb2a60  fffb2a62         3
+FILE=.\ad_converter.obj
+                                  fffb2a64  fffb2a89        26
+FILE=.\mode.obj
+                                  fffb2a8c  fffb2afe        73
+FILE=.\loging.obj
+                                  fffb2b00  fffb2b02         3
+
+SECTION=$ADDR_C_FFFFFF80
+FILE=.\vecttbl.obj
+                                  ffffff80  ffffff83         4
+  _MDEreg
+                                  ffffff80         4   data ,g         0
+
+SECTION=$ADDR_C_FFFFFFA0
+FILE=.\vecttbl.obj
+                                  ffffffa0  ffffffaf        10
+  _id_code
+                                  ffffffa0        10   data ,g         0
+
+SECTION=FIXEDVECT
+FILE=.\vecttbl.obj
+                                  ffffffd0  ffffffff        30
+  _Fixed_Vectors
+                                  ffffffd0        30   data ,g         0
+
+*** Unfilled Areas ***
+
+AREA                                START    END
+
+*** Delete Symbols ***
+
+SYMBOL                                SIZE    INFO
