@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+environment/buildEnvironmentInclude/com.renesas.cdt.rxc.debug.win32.configuration.Id.410836321.1503273852/CPATH/delimiter=;
+environment/buildEnvironmentInclude/com.renesas.cdt.rxc.debug.win32.configuration.Id.410836321.1503273852/CPATH/operation=remove
+environment/buildEnvironmentInclude/com.renesas.cdt.rxc.debug.win32.configuration.Id.410836321.1503273852/C_INCLUDE_PATH/delimiter=;
+environment/buildEnvironmentInclude/com.renesas.cdt.rxc.debug.win32.configuration.Id.410836321.1503273852/C_INCLUDE_PATH/operation=remove
+environment/buildEnvironmentInclude/com.renesas.cdt.rxc.debug.win32.configuration.Id.410836321.1503273852/append=true
+environment/buildEnvironmentInclude/com.renesas.cdt.rxc.debug.win32.configuration.Id.410836321.1503273852/appendContributed=true
+environment/buildEnvironmentLibrary/com.renesas.cdt.rxc.debug.win32.configuration.Id.410836321.1503273852/LIBRARY_PATH/delimiter=;
+environment/buildEnvironmentLibrary/com.renesas.cdt.rxc.debug.win32.configuration.Id.410836321.1503273852/LIBRARY_PATH/operation=remove
+environment/buildEnvironmentLibrary/com.renesas.cdt.rxc.debug.win32.configuration.Id.410836321.1503273852/append=true
+environment/buildEnvironmentLibrary/com.renesas.cdt.rxc.debug.win32.configuration.Id.410836321.1503273852/appendContributed=true

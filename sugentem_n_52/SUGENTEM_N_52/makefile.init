@@ -1,0 +1,8 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+export INC_RX=C:\PROGRA~2\RENESA~1\CS_~1\CC\CC-RX\V206~1.00\include
+export RXC_LIB=C:\PROGRA~2\RENESA~1\CS_~1\CC\CC-RX\V206~1.00\bin
+export BIN_RX=C:\PROGRA~2\RENESA~1\CS_~1\CC\CC-RX\V206~1.00\bin
+PATH := $(PATH):C:\PROGRA~2\RENESA~1\CS_~1\CC\CC-RX\V206~1.00\bin
